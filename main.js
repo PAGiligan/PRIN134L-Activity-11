@@ -20,14 +20,17 @@ function moveTarget() {
 
 }
 
+window.addEventListener("keydown",function (e) {
+    if (e.keyCode === 112) {
+      e.preventDefault();
+      score = 0;
+      scoreBoard.textContent = `Score: ${score}`;
+      moveTarget();
+    }
+  });
 gameArea.addEventListener('contextmenu', function(event) {
   event.preventDefault();
 });
-
-// Initial target position
-moveTarget();
-
-
 
 // Initial target position
 moveTarget();
