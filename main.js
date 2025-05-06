@@ -40,4 +40,4 @@ target.addEventListener('contextmenu', function(event){
   score++;
   scoreBoard.textContent = `Score:${score}`;
   moveTarget();
-})
+})dd
